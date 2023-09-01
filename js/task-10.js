@@ -21,10 +21,7 @@ numberInput.addEventListener("input", (event) => {
 });
 
 creatingBoxes.addEventListener("click", () => {
-  const appends = createBoxes(valueOfNumber);
-  if (typeof appends !== "undefined") {
-    box.append(...appends);
-  }
+  createBoxes(valueOfNumber);
   // console.log(valueQuantity);
   // console.log(typeof valueQuantity);
 });
@@ -63,5 +60,6 @@ function createBoxes(amount) {
     div.style.height = parseInt(lastElement.style.height) + 10 + "px";
     arrayOfDivs.push(div);
   }
-  return arrayOfDivs;
+
+  box.append(...arrayOfDivs);
 }

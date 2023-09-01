@@ -9,12 +9,29 @@ const decrementButton = document.querySelector(
   'button[data-action="decrement"]'
 );
 
-incrementButton.addEventListener("click", () => {
+// first
+/*
+  incrementButton.addEventListener("click", () => {
+    counterValue += 1;
+    counterChanges.textContent = counterValue;
+  });
+
+  decrementButton.addEventListener("click", () => {
+    counterValue -= 1;
+    counterChanges.textContent = counterValue;
+  });
+*/
+
+//second
+incrementButton.addEventListener("click", incrementValue);
+decrementButton.addEventListener("click", decrementValue);
+
+function incrementValue() {
   counterValue += 1;
   counterChanges.textContent = counterValue;
-});
+}
 
-decrementButton.addEventListener("click", () => {
+function decrementValue() {
   counterValue -= 1;
   counterChanges.textContent = counterValue;
-});
+}
