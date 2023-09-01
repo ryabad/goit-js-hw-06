@@ -25,15 +25,15 @@ button {
 
 .picture {
   display: block;
-  max-width: 100%;
-  height: auto;
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
 }
 
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
